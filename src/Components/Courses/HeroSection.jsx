@@ -365,7 +365,7 @@ const HeroSection = () => {
 </div>
 
 {/* Footer Section */}
-<div
+  {/* <div
   className="absolute bg-gradient-to-r from-[#1399FD] via-[#71B2FC] to-[#2C60D0] rounded-lg shadow-md"
   style={{
     width: "1600px", 
@@ -393,7 +393,34 @@ const HeroSection = () => {
 
    
   </div>
+   </div> */}
+
+<div
+  className="absolute bg-gradient-to-r from-[#1399FD] via-[#71B2FC] to-[#2C60D0] rounded-lg shadow-md"
+  style={{
+    width: "100%", // Ensures full-width layout
+    height: "auto", // Automatically adjusts height based on content
+    top: "650px",
+    left: "0",
+  }}
+>
+  <div className="flex flex-wrap justify-center items-center h-full space-x-4 space-y-1 md:space-x-6 lg:space-x-8 p-4">
+    <img src={adani} alt="Logo 1" className="h-12 w-12 sm:h-16 sm:w-16 lg:h-20 lg:w-20 rounded-full" />
+    <img src={epin} alt="Logo 2" className="h-12 w-12 sm:h-16 sm:w-16 lg:h-20 lg:w-20 rounded-full" />
+    <img src={Dixon} alt="Logo 3" className="h-12 w-12 sm:h-16 sm:w-16 lg:h-20 lg:w-20 rounded-full" />
+    <img src={subros} alt="Logo 4" className="h-12 w-12 sm:h-16 sm:w-16 lg:h-20 lg:w-20 rounded-full" />
+    <img src={nsdc} alt="nsdc" className="h-12 w-12 sm:h-16 sm:w-16 lg:h-20 lg:w-20 rounded-full" />
+    <img src={global} alt="global" className="h-12 w-12 sm:h-16 sm:w-16 lg:h-20 lg:w-20 rounded-full" />
+    <img src={isid} alt="isid" className="h-12 w-12 sm:h-16 sm:w-16 lg:h-20 lg:w-20 rounded-full" />
+    <img src={capro} alt="capro" className="h-12 w-12 sm:h-16 sm:w-16 lg:h-20 lg:w-20 rounded-full" />
+    <img src={turners} alt="turners" className="h-12 w-12 sm:h-16 sm:w-16 lg:h-20 lg:w-20 rounded-full" />
+    <img src={nilm} alt="nilm" className="h-12 w-12 sm:h-16 sm:w-16 lg:h-20 lg:w-20 rounded-full" />
+    <img src={ak} alt="ak" className="h-12 w-12 sm:h-16 sm:w-16 lg:h-20 lg:w-20 rounded-full" />
+    <img src={padget} alt="padget" className="h-12 w-12 sm:h-16 sm:w-16 lg:h-20 lg:w-20 rounded-full" />
+  </div>
 </div>
+
+
 <Courses/>
 
     </section>
