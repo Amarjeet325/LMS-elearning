@@ -400,7 +400,7 @@ const HeroSection = () => {
   style={{
     width: "100%", // Ensures full-width layout
     height: "auto", // Automatically adjusts height based on content
-    top: "650px",
+    top: "645px",
     left: "0",
   }}
 >
