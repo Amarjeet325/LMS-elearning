@@ -37,33 +37,35 @@ const TrustedPartners = () => {
 
   return (
     <>
-      <div
-        className="max-w-full mx-auto min-h-screen relative w-full h-60 overflow-hidden bg-gray-100"
-        style={{
-          backgroundImage: `url('/logos/background.png')`,
-          backgroundSize: 'cover',
-          backgroundPosition: 'center'
-        }}
-      >
-        <div className="absolute inset-0 bg-blue-100 bg-opacity-30 z-0"></div>
 
-        {/* Moving Logos */}
+
+      <div className="max-w-full mx-auto min-h-screen flex flex-col justify-center items-center bg-blue-100 relative">
+        {/* Title Section */}
+        <h2 className="text-5xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-blue-700 mb-4 text-center">
+          Trusted <span className="text-black italic">Partners</span>
+        </h2>
+         
+        <div className="absolute inset-0 bg-blue-100 bg-opacity-30 z-0"></div>
+        {/* Moving Logos Section */}
         <div
-          className="flex items-center w-full mt-48 py-36 z-10 cursor-pointer space-x-4 sm:space-x-8 overflow-x-hidden"
+          className="flex items-center w-full py-12 z-10 cursor-pointer space-x-4 overflow-x-hidden"
           ref={logosContainerRef}
         >
-          <div className="flex w-[200%]"> {/* Adjust the width to 200% */}
+          <div className="flex w-[200%]">
             {[...logos, ...logos].map((logo, index) => (
               <img
                 key={index}
                 src={logo}
                 alt={`Logo ${index % logos.length + 1}`}
-                className={`w-20 h-20 sm:w-32 sm:h-32 md:w-44 md:h-44 rounded-full border-2 border-sky-600 z-10 hover:bg-white transition-transform transform hover:scale-105 mx-2 ${index === 4 ? 'special-class-for-5th-logo' : ''}`}
+                className={`w-16 h-16 sm:w-20 sm:h-20 md:w-28 md:h-28 lg:w-36 lg:h-36 rounded-full border-2 border-sky-600 hover:bg-white transition-transform transform hover:scale-105 mx-2 ${index === 4 ? 'special-class-for-5th-logo' : ''
+                  }`}
               />
             ))}
           </div>
         </div>
       </div>
+
+
     </>
   );
 };
