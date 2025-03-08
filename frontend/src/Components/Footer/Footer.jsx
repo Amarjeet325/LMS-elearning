@@ -53,6 +53,9 @@ const Footer = () => {
             </ul>
           </div>
           {/* Academics */}
+
+
+          
           <div>
             <h2 className="font-semibold text-4xl">Academics</h2>
             <ul className="mt-4 space-y-2">
